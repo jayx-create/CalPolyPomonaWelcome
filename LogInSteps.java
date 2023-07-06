@@ -3,7 +3,7 @@ import io.cucumer.java.en.Given;
 import io.cucumer.java.en.Then;
 import io.cucumer.java.en.When;
 
-public class FirstSteps {
+public class LogInSteps {
   
   
 @Given("{string} is logged into Cal Poly Pomona portal")
