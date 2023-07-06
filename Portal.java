@@ -7,18 +7,19 @@ public class FirstSteps {
   
   
 @When("User is home page of Cal Poly Pomona portal")
-  public void loginProfileIdIsLoggedIn(String loginProfileId) throws Exception{
-   baseUtil.userInformation = TestUserUtil.getTestUserByProfileId(loginProfileId);
-   realData = baseutil.userInformation;
-   name = realData.getUserName();
-   switch(deviceMode.toUpperCase()) {
-     case GlobalConstant.DESKTOP:
-       if ( expectedLanguage.equals("English"){
-         cppPortal;.invoke(username);
-         cppPortal.waitForPageToLoad();
-       }
-   }
- }           
+  public void userIsHomePageOfCalPolyPomonaPortal(){
+    case GlobalConstant.DESKTOP:
+      switch(language){
+      case GlobalConstant.ENGLISH:
+        secureSessionHeader_CPP.navigationLinks.calPolyPomonaLink.click();
+        secureSessionHeader_CPP.navigationLinks.calPolyPomonaLink.waitForVisible();
+
+if(!secureSessionHeader_CPP.navigationLinks.calPolyPomonaLink.isPresent()){
+  throw new CPPException.NO_ELIGIBLE_ACCOUNTS("Cal Poly Pomona menus not displayed."
+      + " Please check with IT Department of problem continues."
+                                              }                                        
+
+    
  @Then("User can see "Welcome" text on top of portal")
      public void userIsRegisteredWithLanguage(String language) throws Exception{
   if(userLanguage. equalsIgnoreCase (GlobalConstant.ENGLISH)) {
