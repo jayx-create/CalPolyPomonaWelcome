@@ -14,3 +14,16 @@ Within this in order to execute I would configure TestNG and modify the JDK sett
 ﻿-Denv.resources="resources/*type of environment*"
 ﻿-Dcucumber. filter. tags=" (@CPP_1)"
 ﻿-Dproject.module.name-"CPPWELCOMEPAGE"
+
+After running maven, we would also wait for a successful build then procceed to TestNG configurationa and run the specific test ID in order to test the gherkin steps/automation scripts. After clicking run on the IDE we will watch the automation test executing. 
+
+If the test is not executing steps to debug would go as follows for me:
+
+Steps to debug:
+-Check VM Options(check it has all correct configurations and also the JDK Settings)
+-Check gherking step and also make sure the automation step matches the step
+-Check if .java file with automation script is written correctly
+-Check if locator is the correct x-path
+-Execute once more in case everything is correct and it is not a system issue(tends to happen)
+-Build maven again, make sure project is building successfully and not failing
+-Dont give up!
