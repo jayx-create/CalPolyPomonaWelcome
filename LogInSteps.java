@@ -20,12 +20,19 @@ public class FirstSteps {
    }
  }           
  @And ("User is registered with {string}")
-     public void userIsRegisteredWithLanguage(String language) throws Exception{
+  public void userIsRegisteredWithLanguage(String language) throws Exception{
   if(userLanguage. equalsIgnoreCase (GlobalConstant.ENGLISH)) {
 baseutil.deviceProp.setPreferredLanguage(GlobalConstant.ENGLISH);
 if(!dataType.toUpperCase().contains (GlobalConstant.DATA_TYPE_VIRTUAL)) {
 changeUserPreferredLanguage(GlobalConstant.ENGLISH_PREFFERED_LANG_CODE)
   }
-  }
+    }
+ }
+else if (userLanguage.equalsIgnoreCase(GlobalConstant.SPANISH)){
+baseUtil.deviceProp.setPreferredLanguage(GlobalConstant.SPANISH);
+if (!dataType.toUpperCase().contains (GlobalConstant.DATA_TYPE_VIRTUAL)) {
+changeUserPreferredLanguage(GlobalConstant.SPANISH_PREFFERED_LANG_CODE);
      }
+}
+}
 }
