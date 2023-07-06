@@ -3,7 +3,7 @@ import io.cucumer.java.en.Given;
 import io.cucumer.java.en.Then;
 import io.cucumer.java.en.When;
 
-public class FirstSteps {
+public class Portal {
   
   
 @When("User clicks on new student drop down page of Cal Poly Pomona portal")
