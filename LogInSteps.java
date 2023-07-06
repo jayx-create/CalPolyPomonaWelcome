@@ -14,9 +14,12 @@ public class LogInSteps {
    switch(deviceMode.toUpperCase()) {
      case GlobalConstant.DESKTOP:
        if ( expectedLanguage.equals("English"){
-         cppPortal;.invoke(username);
+         cppPortal.invoke(username);
          cppPortal.waitForPageToLoad();
        }
+       else if( expectedLanguage.equals("Spanish"){
+         cppPortal.invoke(username);
+         cppPortal.waitForPageToLoad();
    }
  }           
  @And ("User is registered with {string}")
@@ -28,11 +31,12 @@ changeUserPreferredLanguage(GlobalConstant.ENGLISH_PREFFERED_LANG_CODE)
   }
     }
  }
-else if (userLanguage.equalsIgnoreCase(GlobalConstant.SPANISH)){
+else if(userLanguage.equalsIgnoreCase(GlobalConstant.SPANISH)){
 baseUtil.deviceProp.setPreferredLanguage(GlobalConstant.SPANISH);
 if (!dataType.toUpperCase().contains (GlobalConstant.DATA_TYPE_VIRTUAL)) {
 changeUserPreferredLanguage(GlobalConstant.SPANISH_PREFFERED_LANG_CODE);
      }
+}
 }
 }
 }
