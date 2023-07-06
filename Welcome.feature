@@ -13,3 +13,5 @@ When User is home page of Cal Poly Pomona portal
 Then User can see "Welcome" text on top of portal
 
 Examples:
+| TestCaseId     | Login Profile Id | Language  | user |
+| CPP_1          | 201              | English   | 
