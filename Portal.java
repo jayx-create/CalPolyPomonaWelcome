@@ -22,6 +22,18 @@ if(!secureSessionHeader_CPP.navigationLinks.calPolyPomonaLink.isPresent()){
        secureSessionHeader_CPP.navigationLinks.calPolyPomonaLink.click();
         navigationLinks.waitForPageToLoad();
         navigationLinks.headerCalPolyPomona.verifyText("Cal Poly New Student")
+          break;
+          case GlobalConstant.SPANISH:
+        secureSessionHeaderSpanish_CPP.navigationLinks.calPolyPomonaLink.click();
+        secureSessionHeaderSpanish_CPP.navigationLinks.calPolyPomonaLink.waitForVisible();
+
+if(!secureSessionHeader_CPP.navigationLinks.calPolyPomonaLink.isPresent()){
+  throw new CPPException.NO_ELIGIBLE_ACCOUNTS("Cal Poly Pomona menus not displayed."
+      + " Please check with IT Department of problem continues."
+                                              }   
+       secureSessionHeaderSpanish_CPP.navigationLinks.calPolyPomonaLink.click();
+        navigationLinks.waitForPageToLoad();
+        navigationLinks.headerCalPolyPomona.verifyText("Cal Poly Nueva Estudiante")
           }
   }
   }
@@ -36,8 +48,11 @@ if(!secureSessionHeader_CPP.navigationLinks.calPolyPomonaLink.isPresent()){
        newStudentPage.welcomeText.isDisplayed();
        newStudentPage.welcomeText.verifyText("Welcome");
        break;
+        case GlobalConstant.SPANISH:
+          newStudentPageSpanish.welcomeText.isDisplayed();
+          newStudentPageSpanish.welcomeText.verifyText("la Bienvenida");
      default:
-       throw new CPPException.GENERAL_SCRIPT(String.format("Invalid device type. Please Validate, deviceMode));
+       throw new CPPException.GENERAL_SCRIPT(String.format("Invalid language type. Please Validate, language));
    }
  }
 }
