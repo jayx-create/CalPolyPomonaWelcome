@@ -4,8 +4,7 @@ Feature: Student on Cal Poly Pomona portal can see "Welcome" when logged into po
 
 Background: The customer has logged in to Cal Poly Pomona portal to pay classes
 Given "<user>" is logged into Cal Poly Pomona portal 
-And I am logged in to Cal Poly Pomona portal login "<user>"
-
+And  User is registered with "<Language>"
 
 @screenSizeType: ["Desktop", "Tablet"] @executionType: ["Browser"] 
 Scenario Outline: "<testcaseID>" Student can see "Welcome" text when logged into portal
