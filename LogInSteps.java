@@ -12,7 +12,7 @@ public class FirstSteps {
    realData = baseutil.userInformation;
    name = realData.getUserName();
    switch(deviceMode.toUpperCase()) {
-     case GlobalConstant.PHONE:
+     case GlobalConstant.DESKTOP:
        if ( expectedLanguage.equals("English"){
          cppPortal;.invoke(username);
          cppPortal.waitForPageToLoad();
